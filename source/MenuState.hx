@@ -13,7 +13,8 @@ import flixel.util.FlxMath;
  */
 class MenuState extends FlxState
 {
-  private var _gameTitle:FlxText;
+	private var _gameTitle:FlxText;
+	private var _startButton:FlxButton;
 
 	/**
 	 * Function that is called up when to state is created to set it up. 
@@ -24,9 +25,22 @@ class MenuState extends FlxState
 		_gameTitle.setFormat(null, 16, FlxColor.WHITE, "center");
 		add(_gameTitle);
 
+		_startButton = new FlxButton(120, 170, "Play", onStart);
+		add(_startButton);
+
 		super.create();
 	}
-	
+
+	private function onStart():Void
+	{
+		FlxG.cameras.fade(FlxColor.BLACK, 1, false, onFade);
+	}
+
+	private function onFade():Void
+	{
+		FlxG.switchState(new PlayState());
+	}
+
 	/**
 	 * Function that is called when this state is destroyed - you might want to 
 	 * consider setting all objects this state uses to null to help garbage collection.
