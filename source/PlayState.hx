@@ -24,6 +24,7 @@ class PlayState extends FlxState
 
 		add(_level.backgroundGroup);
 		add(_level.collisionGroup);
+		add(_level.characterGroup);
 		add(_level.foregroundGroup);
 
 		FlxG.camera.bounds = _level.getBounds();
@@ -47,7 +48,6 @@ class PlayState extends FlxState
 	override public function update():Void
 	{
 		_level.update();
-
 		super.update();
 	}	
 }

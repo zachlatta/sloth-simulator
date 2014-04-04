@@ -4,18 +4,30 @@
   <image source="main.png" width="128" height="32"/>
  </tileset>
  <layer name="wood" width="100" height="100">
+  <properties>
+   <property name="tileset" value="main"/>
+  </properties>
   <data encoding="base64" compression="zlib">
    eJzt0cEJgDAABME8Qvov2bwsIAouMgP3P9gxAAAAAOB/5t76+gQ3PVr0aNGjRY8WPVre7KHtc3q06NGiR4seLXq06NGiR4seLXq06NGiR4seLXq06AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcOYCy1ABaQ==
   </data>
  </layer>
  <layer name="ground" width="100" height="100">
+  <properties>
+   <property name="tileset" value="main"/>
+  </properties>
   <data encoding="base64" compression="zlib">
    eJztwzENAAAIA7B9+HeMih2ENmkCAAAAAAAAAAAAAAAAtM3xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPDJAkZnAVE=
   </data>
  </layer>
  <layer name="leaves" width="100" height="100">
+  <properties>
+   <property name="tileset" value="main"/>
+  </properties>
   <data encoding="base64" compression="zlib">
    eJzt2UEKgzAQBdDRrlpbe//bmoKLELoRwRnwPfj7gS+SSSIAAMg2tcx7HsmzEPFsee35hk6y9X38suSOc3v6qEUfteijlnfLp8uaOw7AJeyWtdgta3FWO6//x/zLkW9cH+eN590xR86/+qhFH7XYLQEAACCf949a+vsrd1cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwB1sD7YDOA==
   </data>
  </layer>
+ <objectgroup name="events" width="100" height="100">
+  <object name="sloth" type="player" x="302" y="223" width="31" height="57"/>
+ </objectgroup>
 </map>

@@ -32,6 +32,7 @@
 	<!--You can use rename="newName" to shorten the paths to individual subdirectories!-->
 	<assets path="assets" />
   <assets path="assets/maps" rename="maps" />
+  <assets path="assets/images" rename="images" />
 	
 	<!--------------------------------LIBRARIES------------------------------------->
 	
