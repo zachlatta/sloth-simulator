@@ -5,6 +5,7 @@ import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
+import flixel.util.FlxColor;
 import flixel.util.FlxMath;
 
 /**
@@ -12,11 +13,17 @@ import flixel.util.FlxMath;
  */
 class MenuState extends FlxState
 {
+  private var _gameTitle:FlxText;
+
 	/**
 	 * Function that is called up when to state is created to set it up. 
 	 */
 	override public function create():Void
 	{
+		_gameTitle = new FlxText(10, 25, 300, "Sloth Simulator");
+		_gameTitle.setFormat(null, 16, FlxColor.WHITE, "center");
+		add(_gameTitle);
+
 		super.create();
 	}
 	
