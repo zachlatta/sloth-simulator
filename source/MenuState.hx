@@ -15,12 +15,16 @@ class MenuState extends FlxState
 {
 	private var _gameTitle:FlxText;
 	private var _startButton:FlxButton;
+	private var _bg:FlxSprite;
 
 	/**
 	 * Function that is called up when to state is created to set it up. 
 	 */
 	override public function create():Void
 	{
+		_bg = new FlxSprite(0, 0, "images/mainbg.png");
+		add(_bg);
+
 		_gameTitle = new FlxText(10, 25, 300, "Sloth Simulator");
 		_gameTitle.setFormat(null, 16, FlxColor.WHITE, "center");
 		add(_gameTitle);
