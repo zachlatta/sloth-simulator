@@ -6,17 +6,29 @@ import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.util.FlxMath;
+import map.Level;
 
 /**
  * A FlxState which can be used for the actual gameplay.
  */
 class PlayState extends FlxState
 {
+	private var _level:Level;
+
 	/**
 	 * Function that is called up when to state is created to set it up. 
 	 */
 	override public function create():Void
 	{
+		_level = new Level("maps/main.tmx");
+
+		add(_level.backgroundGroup);
+		add(_level.collisionGroup);
+		add(_level.foregroundGroup);
+
+		FlxG.camera.bounds = _level.getBounds();
+		FlxG.worldBounds.copyFrom(_level.getBounds());
+
 		super.create();
 	}
 	
@@ -34,6 +46,8 @@ class PlayState extends FlxState
 	 */
 	override public function update():Void
 	{
+		_level.update();
+
 		super.update();
 	}	
 }
