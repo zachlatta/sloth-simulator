@@ -20,7 +20,7 @@ class PlayState extends FlxState
 	 */
 	override public function create():Void
 	{
-		_level = new Level("maps/main.tmx");
+		_level = new Level("maps/tiles.tmx");
 
 		add(_level.backgroundGroup);
 		add(_level.collisionGroup);
