@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="16" tileheight="16">
  <tileset firstgid="1" name="main" tilewidth="16" tileheight="16">
-  <image source="../../../../../Pictures/Untitled.png" width="32" height="32"/>
+  <image source="main.png" width="32" height="32"/>
  </tileset>
- <layer name="Tile Layer 1" width="100" height="100" visible="0">
-  <data encoding="base64" compression="zlib">
-   eJzt2UkOwkAMRcEG5f5nZgGLFmJQaCf+SFVSX4AX7Axj3G3ToZ8eWbahSYrnFnr0etVDkx7vWujRQ48sn3pocj49suiQ6fo4ZNAjy9zD7Opjn2fRIUt1By3XzC1W97n/V52K+yszr85qDzuolh5ZqnuwpmJ/eMavo0cWPbLokaWqh3dhNY7uwT7mVRY9suiRRY8se3/Lb98V7fA1v17behzDvMqiRxY9Mlz+8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAECKG9QxAsw=
-  </data>
- </layer>
  <layer name="wood" width="100" height="100">
+  <properties>
+   <property name="tileset" value="main"/>
+  </properties>
   <data encoding="base64" compression="zlib">
    eJzt0cEJACAQwDBx/6H9OMI9KibQCboWAAAAP9s3Gvxo8aPFjxY/Wvxo8aPFjxY/Wvxomfjh6Rw/Wvxo8aPFjxY/Wvxo8aPFjxY/Wvxo8aPFjxY/Wvxo8aPFDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB1Bz7eALE=
   </data>
  </layer>
  <layer name="leaves" width="100" height="100">
+  <properties>
+   <property name="tileset" value="main"/>
+  </properties>
   <data encoding="base64" compression="zlib">
    eJzt2EEKgCAURVEH7n/NDWqoQST9Z5wDbqBLvqi1U78OGXrTJIkeOfrgUEePHKMWetSZ9dCkhh5Z9MiiBbArd1etuz3X4ns6ZFn9/LV8Z2UP71cWd14OG5RFjyxaAMA/zDbdxtfwXxIA9jLaaxtezzcVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAzB4adAfE=
   </data>
  </layer>
  <layer name="ground" width="100" height="100">
+  <properties>
+   <property name="tileset" value="main"/>
+  </properties>
   <data encoding="base64" compression="zlib">
    eJzt0LEJAAAIwDD9/2lnd0WEBPpAIwAAAAAAAAAAAAAAAADgVg5EN/F0IwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPigACMCADg=
   </data>
