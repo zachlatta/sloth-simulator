@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="16" tileheight="16">
  <tileset firstgid="1" name="main" tilewidth="16" tileheight="16">
-  <image source="main.png" width="32" height="32"/>
+  <image source="main.png" width="128" height="32"/>
  </tileset>
  <layer name="wood" width="100" height="100">
-  <properties>
-   <property name="tileset" value="main"/>
-  </properties>
   <data encoding="base64" compression="zlib">
-   eJzt0cEJACAQwDBx/6H9OMI9KibQCboWAAAAP9s3Gvxo8aPFjxY/Wvxo8aPFjxY/Wvxomfjh6Rw/Wvxo8aPFjxY/Wvxo8aPFjxY/Wvxo8aPFjxY/Wvxo8aPFDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB1Bz7eALE=
-  </data>
- </layer>
- <layer name="leaves" width="100" height="100">
-  <properties>
-   <property name="tileset" value="main"/>
-  </properties>
-  <data encoding="base64" compression="zlib">
-   eJzt2EEKgCAURVEH7n/NDWqoQST9Z5wDbqBLvqi1U78OGXrTJIkeOfrgUEePHKMWetSZ9dCkhh5Z9MiiBbArd1etuz3X4ns6ZFn9/LV8Z2UP71cWd14OG5RFjyxaAMA/zDbdxtfwXxIA9jLaaxtezzcVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAzB4adAfE=
+   eJzt0cEJgDAABME8Qvov2bwsIAouMgP3P9gxAAAAAOB/5t76+gQ3PVr0aNGjRY8WPVre7KHtc3q06NGiR4seLXq06NGiR4seLXq06NGiR4seLXq06AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcOYCy1ABaQ==
   </data>
  </layer>
  <layer name="ground" width="100" height="100">
-  <properties>
-   <property name="tileset" value="main"/>
-  </properties>
   <data encoding="base64" compression="zlib">
-   eJzt0LEJAAAIwDD9/2lnd0WEBPpAIwAAAAAAAAAAAAAAAADgVg5EN/F0IwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPigACMCADg=
+   eJztwzENAAAIA7B9+HeMih2ENmkCAAAAAAAAAAAAAAAAtM3xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPDJAkZnAVE=
+  </data>
+ </layer>
+ <layer name="leaves" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt2UEKgzAQBdDRrlpbe//bmoKLELoRwRnwPfj7gS+SSSIAAMg2tcx7HsmzEPFsee35hk6y9X38suSOc3v6qEUfteijlnfLp8uaOw7AJeyWtdgta3FWO6//x/zLkW9cH+eN590xR86/+qhFH7XYLQEAACCf949a+vsrd1cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwB1sD7YDOA==
   </data>
  </layer>
 </map>
